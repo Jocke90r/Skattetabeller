@@ -1,15 +1,23 @@
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './App.scss';
-
+import './App.css';
+import Header from './Components/Header.js'
 import { Button } from 'react-bootstrap';
+import logo from './logo.svg'
+import React from 'react'
+class App extends React.Component {
+  render() {
+    return (
+      <div>
+        <div className="App-header">
+          <Header></Header>
+        
+        <p></p>
+        <button color="white">Button</button>
+        </div>
+      </div>
+    )
+  }
 
-function App() {
-  return (
-    <div >
-      <Button class="btn btn-success btn-lg">Click me</Button>
-      <p>Bootstrap</p>
-    </div>
-  );
 }
 
 export default App;
